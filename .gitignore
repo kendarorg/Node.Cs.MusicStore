@@ -111,3 +111,4 @@ Backup*/
 UpgradeLog*.XML
 
 App_Bin/
+PerfMon/

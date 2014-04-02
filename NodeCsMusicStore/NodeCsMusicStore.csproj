@@ -7,8 +7,8 @@
     <ProjectGuid>{02C708FB-E217-4E11-A4C8-0C39B183E9FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvcMusicStore</RootNamespace>
-    <AssemblyName>MvcMusicStore</AssemblyName>
+    <RootNamespace>NodeCsMusicStore</RootNamespace>
+    <AssemblyName>NodeCsMusicStore</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
@@ -35,8 +35,58 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ClassWrapper">
+      <HintPath>..\packages\ClassWrapper.1.0.8-beta\lib\net45\ClassWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ConcurrencyHelpers">
+      <HintPath>..\packages\ConcurrencyHelpers.3.2.1-beta\lib\net45\ConcurrencyHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="CoroutineCache">
+      <HintPath>..\packages\CoroutineCache.3.2.0\lib\net45\CoroutineCache.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ExpressionBuilder">
+      <HintPath>..\packages\ExpressionBuilder.2.0.7-beta\lib\net45\ExpressionBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="GenericHelpers">
+      <HintPath>..\packages\GenericHelpers.1.0.3\lib\net45\GenericHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="NetworkHelpers">
+      <HintPath>..\packages\NetworkHelpers.3.2.0\lib\net45\NetworkHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Admin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Node.Cs.Admin.1.0.7-beta\lib\net45\Node.Cs.Admin.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Authorization">
+      <HintPath>..\packages\Node.Cs.Lib.1.0.7-beta\lib\net45\Node.Cs.Authorization.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Cmd">
+      <HintPath>..\packages\Node.Cs.Cmd.1.0.7-beta\lib\net45\Node.Cs.Cmd.exe</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Commons">
+      <HintPath>..\packages\Node.Cs.Commons.1.0.7-beta\lib\net45\Node.Cs.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.EntityFramework">
+      <HintPath>..\packages\Node.Cs.EntityFramework.1.0.7-beta\lib\net45\Node.Cs.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Lib">
+      <HintPath>..\packages\Node.Cs.Lib.1.0.7-beta\lib\net45\Node.Cs.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Razor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Node.Cs.Razor.1.0.7-beta\lib\net45\Node.Cs.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Node.Cs.Routing">
+      <HintPath>..\packages\Node.Cs.Lib.1.0.7-beta\lib\net45\Node.Cs.Routing.dll</HintPath>
+    </Reference>
     <Reference Include="RazorEngine">
-      <HintPath>..\..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
+      <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -47,13 +97,16 @@
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.1.1\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.1\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="UniversalTypeConverter">
+      <HintPath>..\packages\UniversalTypeConverter.1.0.2\lib\net40\UniversalTypeConverter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
@@ -155,7 +208,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.7.2.js" />
-    <None Include="App.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
     <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
@@ -211,15 +263,17 @@
   <Target Name="AfterBuild">
     <Exec Command="copy /Y $(TargetDir)*.dll $(ProjectDir)App_Bin">
     </Exec>
+    <Exec Command="copy /Y $(TargetDir)*.exe $(ProjectDir)App_Bin">
+    </Exec>
   </Target>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>$(SolutionDir).nodeCs\Node.Cs.Cmd.exe</StartProgram>
+    <StartProgram>$(ProjectDir)App_Bin\Node.Cs.Cmd.exe</StartProgram>
     <StartArguments>-config "$(ProjectDir)node.config"</StartArguments>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
     <StartAction>Program</StartAction>
-    <StartProgram>$(SolutionDir).nodeCs\Node.Cs.Cmd.exe</StartProgram>
+    <StartProgram>$(ProjectDir)App_Bin\Node.Cs.Cmd.exe</StartProgram>
     <StartArguments>-config "$(ProjectDir)node.config"</StartArguments>
   </PropertyGroup>
   <PropertyGroup>
