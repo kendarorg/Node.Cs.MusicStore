@@ -1,0 +1,61 @@
+﻿@model Mvc3ToolsUpdateWeb_Default.Models.RegisterModel
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Create a New Account</h2>
+<p>
+    Use the form below to create a new account. 
+</p>
+<p>
+    Passwords are required to be a minimum of @Membership.MinRequiredPasswordLength characters in length.
+</p>
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true, "Account creation was unsuccessful. Please correct the errors and try again.")
+    <div>
+        <fieldset>
+            <legend>Account Information</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(()=>Model.UserName)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(()=>Model.UserName)
+                @Html.ValidationMessageFor(()=>Model.UserName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(()=>Model.Email)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(()=>Model.Email)
+                @Html.ValidationMessageFor(()=>Model.Email)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(()=>Model.Password)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(()=>Model.Password)
+                @Html.ValidationMessageFor(()=>Model.Password)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(()=>Model.ConfirmPassword)
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(()=>Model.ConfirmPassword)
+                @Html.ValidationMessageFor(()=>Model.ConfirmPassword)
+            </div>
+
+            <p>
+                <input type="submit" value="Register" />
+            </p>
+        </fieldset>
+    </div>
+}

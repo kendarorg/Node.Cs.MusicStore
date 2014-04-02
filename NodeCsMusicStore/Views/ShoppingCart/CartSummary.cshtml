@@ -1,0 +1,7 @@
+﻿<!-- NDR In the original version is used the wrong thing.
+	routeValueDictionary must be null-->
+@Html.ActionLink("Cart (" + ViewData["CartCount"] + ")",
+    "Index",
+    "ShoppingCart",
+		null,
+    new { id = "cart-status" })
