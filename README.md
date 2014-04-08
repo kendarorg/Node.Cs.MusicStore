@@ -65,7 +65,7 @@ written by the author of IlSpy).
 
 ### Features
 
-#### Release 2.0.0
+#### Release 1.1.0
 
 * Core
 	* Easy porting from existing MVC controllers
@@ -109,7 +109,7 @@ written by the author of IlSpy).
 
 Feel free to ask (with an explanation) to change my priorities! All these are more or less indipendents between them
 
-* Release 2.5
+* Release 2.0
 	* Logging level by configuration
 	* Routing through controllers attributes
 	* WebSocket
