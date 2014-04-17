@@ -69,6 +69,8 @@ namespace NodeCsMusicStore
 		{
 			EfInitializer.InitializeConnectionString("MusicStoreEntities");
 			Database.SetInitializer(new SampleData());
+			var ctx = new MusicStoreEntities();
+			ctx.Database.Initialize(true);
 		}
 
 		// ReSharper disable once InconsistentNaming

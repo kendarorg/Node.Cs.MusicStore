@@ -19,7 +19,7 @@ using System.Linq;
 
 namespace NodeCsMusicStore.Models
 {
-	public class SampleData : DropCreateDatabaseAlways<MusicStoreEntities>
+	public class SampleData : CreateDatabaseIfNotExists<MusicStoreEntities>
 	{
 		protected override void Seed(MusicStoreEntities context)
 		{
