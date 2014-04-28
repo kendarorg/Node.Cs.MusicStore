@@ -41,11 +41,11 @@
     </Reference>
     <Reference Include="ConcurrencyHelpers, Version=2.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\ConcurrencyHelpers.3.3.0\lib\net45\ConcurrencyHelpers.dll</HintPath>
+      <HintPath>..\packages\ConcurrencyHelpers.3.3.6\lib\net45\ConcurrencyHelpers.dll</HintPath>
     </Reference>
     <Reference Include="CoroutineCache, Version=2.0.8.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\CoroutineCache.3.3.0\lib\net45\CoroutineCache.dll</HintPath>
+      <HintPath>..\packages\CoroutineCache.3.3.6\lib\net45\CoroutineCache.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
@@ -66,42 +66,43 @@
     </Reference>
     <Reference Include="NetworkHelpers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\NetworkHelpers.4.0.1\lib\net45\NetworkHelpers.dll</HintPath>
+      <HintPath>..\packages\NetworkHelpers.4.0.2\lib\net45\NetworkHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Admin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Admin.1.2.0\lib\net45\Node.Cs.Admin.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Admin.1.2.2\lib\net45\Node.Cs.Admin.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Authorization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Lib.1.2.0\lib\net45\Node.Cs.Authorization.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Lib.1.2.2\lib\net45\Node.Cs.Authorization.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Cmd, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Cmd.1.2.0\lib\net45\Node.Cs.Cmd.exe</HintPath>
+      <HintPath>..\packages\Node.Cs.Cmd.1.2.2\lib\net45\Node.Cs.Cmd.exe</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Commons.1.2.0\lib\net45\Node.Cs.Commons.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Commons.1.2.2\lib\net45\Node.Cs.Commons.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.EntityFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.EntityFramework.1.2.0\lib\net45\Node.Cs.EntityFramework.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.EntityFramework.1.2.2\lib\net45\Node.Cs.EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Lib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Lib.1.2.0\lib\net45\Node.Cs.Lib.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Lib.1.2.2\lib\net45\Node.Cs.Lib.dll</HintPath>
     </Reference>
-    <Reference Include="Node.Cs.MVC">
-      <HintPath>..\packages\Node.Cs.MVC.1.2.1\lib\net45\Node.Cs.MVC.dll</HintPath>
+    <Reference Include="Node.Cs.MVC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Node.Cs.MVC.1.2.2\lib\net45\Node.Cs.MVC.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Razor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Razor.1.2.0\lib\net45\Node.Cs.Razor.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Razor.1.2.2\lib\net45\Node.Cs.Razor.dll</HintPath>
     </Reference>
     <Reference Include="Node.Cs.Routing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Node.Cs.Lib.1.2.0\lib\net45\Node.Cs.Routing.dll</HintPath>
+      <HintPath>..\packages\Node.Cs.Lib.1.2.2\lib\net45\Node.Cs.Routing.dll</HintPath>
     </Reference>
     <Reference Include="RazorEngine">
       <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
